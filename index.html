@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Get Current Position</title>
-<script>
-    function showPosition() {
-        if(navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
-                document.getElementById("result").innerHTML = positionInfo;
-            });
-        } else {
-            alert("Sorry, your browser does not support HTML5 geolocation.");
-        }
-    }
-</script>
-</head>
-<body>
-    <div id="result">
-        <!--Position information will be inserted here-->
-    </div>
-    <button type="button" onclick="showPosition();">Show Position</button>
-</body>
-</html>
 
-
-        <!-- #####################################################
 <!DOCTYPE html>
 <html>
 
@@ -44,9 +17,13 @@
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
+
+    <!-- LIST OF PLACES TO SEE AS POINTS -->
     <a-scene vr-mode-ui="enabled: false" embedded
+
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
+        <!-- HANNOVER -->
         <a-text value="Aegi" gps-entity-place="latitude: 52.36770144; longitude:  9.7410977;" position="0 320 0"
             rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
             width="400">
@@ -62,13 +39,37 @@
             width="200">
         </a-text>
         
+        <!-- BERLIN  -->
+        <a-text value="Bridge Spree" gps-entity-place="latitude: 52.52254274; longitude:  13.32920155;" position="0 320 0"
+            rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
+            width="400">
+        </a-text>
+
+        <a-text value="Chimney" gps-entity-place="latitude: 52.52034995; longitude: 13.32389663;" position="0 320 0"
+            rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
+            width="400">
+        </a-text>
+
+        <a-text value="Emergency stairs" gps-entity-place="latitude: 52.52107874; longitude: 13.323709092;" position="0 420 0"
+            rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
+            width="200">
+        </a-text>
+        
+        <!-- LIST OF PLACES TO SEE AS POINTS -->
+        <!-- LIST OF PLACES TO SEE AS LINES -->
+        
+        
+        <!-- LIST OF PLACES TO SEE AS LINES -->
+        <!-- LIST OF PLACES TO SEE AS POLYGONS -->
+        
+        <!-- LIST OF PLACES TO SEE AS POLYGONS -->
+        
        <!-- <a-camera id="camera"
             gps-camera="simulateLatitude: 52.37062121; simulateLongitude: 9.75004231; simulateAltitude: 300"
             rotation-reader far=900000>
+
         </a-camera> -->
-        
-        <a-camera gps-camera rotation-reader>
-  </a-camera>
+            <a-camera gps-camera rotation-reader>
+        </a-camera>
     </a-scene>
 </body>
--->
