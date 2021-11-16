@@ -22,22 +22,18 @@
     <a-scene vr-mode-ui="enabled: false" embedded
 
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-     <a-camera id="camera" gps-camera="minDistance: 40;" rotation-reader></a-camera>
-        <!-- HANNOVER 
-        <a-text value="Aegi" gps-entity-place="latitude: 52.36770144; longitude:  9.7410977;" position="0 320 0"
-            rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
-            width="800">
-        </a-text>
--->
-        <a-text value="REWE" gps-entity-place="latitude: 52.36949244; longitude:  9.7498887;" position="0 320 0"
-            rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
-            width="800">
+     
+        <!-- HANNOVER -->
+        
+        <a-text value="REWE" gps-entity-place="latitude: 52.36949244; longitude:  9.7498887;" position="0 320 0" rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center" width="800">
         </a-text>
         
-        <a-text value="ICE cream" gps-entity-place="latitude: 52.36935988; longitude:  9.75225101;" position="0 420 0"
-            rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center"
-            width="1600">
+        <a-text value="ICE cream" gps-entity-place="latitude: 52.36935988; longitude:  9.75225101;" position="0 420 0" rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center" width="1600">
         </a-text>
+        
+        <a-text value="Aegi" gps-entity-place="latitude: 52.36770144; longitude:  9.7410977;" position="0 320 0" rotation="0 0 0" font="mozillavr" color="#e43e31" look-at="#camera" side="double" align="center" width="800">
+        </a-text>
+
 <!--
     
         
@@ -78,7 +74,7 @@
         </a-camera>
 -->
        
-    
+    <a-camera id="camera" gps-camera="minDistance: 40;" rotation-reader></a-camera>
     </a-scene>
     
     
